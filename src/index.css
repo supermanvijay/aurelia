@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  /* Custom subtle luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b0c10;
+  }
+  .light ::-webkit-scrollbar-track {
+    background: #f4f1ea;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c5a059;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e6c875;
+  }
+}
+
+/* Print styles for Menu / Tasting Folio */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, #reservation, #reviews, #gallery, #contact, #events, .no-print {
+    display: none !important;
+  }
+}

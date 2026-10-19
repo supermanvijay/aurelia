@@ -1,0 +1,6 @@
+{
+  "name": "Aurelia – Haute Multi-Cuisine Fine Dining",
+  "description": "Experience Michelin-caliber multi-cuisine gastronomy, artisanal tasting menus, and seamless table reservations in Mayfair, London.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

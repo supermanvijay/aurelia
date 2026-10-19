@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia – Haute Multi-Cuisine Fine Dining & Atelier</title>
+    <meta
+      name="description"
+      content="Experience Michelin-caliber multi-cuisine gastronomy, artisanal tasting menus, and seamless table reservations at Aurelia in Mayfair, London."
+    />
+    <meta property="og:type" content="restaurant.restaurant" />
+    <meta property="og:title" content="Aurelia – Haute Multi-Cuisine Fine Dining & Atelier" />
+    <meta
+      property="og:description"
+      content="Experience Michelin-caliber multi-cuisine gastronomy, artisanal tasting menus, and seamless table reservations in Mayfair, London."
+    />
+    <meta property="og:site_name" content="Aurelia Haute Dining" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aurelia – Haute Multi-Cuisine Fine Dining & Atelier" />
+    <meta
+      name="twitter:description"
+      content="Experience Michelin-caliber multi-cuisine gastronomy, artisanal tasting menus, and seamless table reservations in Mayfair, London."
+    />
+    <meta name="theme-color" content="#0B0C10" />
+
+    <!-- Google Fonts for Editorial Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD for Restaurant -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Aurelia",
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop",
+        "@id": "https://aureliadining.com",
+        "url": "https://aureliadining.com",
+        "telephone": "+44 20 7946 0928",
+        "email": "reservations@aureliadining.com",
+        "priceRange": "££££",
+        "servesCuisine": [
+          "Modern European",
+          "Artisanal Italian",
+          "Pan-Asian Infusions",
+          "Contemporary Charcoal Indian",
+          "Multi-Cuisine Fine Dining"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "42 Berkeley Square",
+          "addressLocality": "Mayfair, London",
+          "postalCode": "W1J 5AW",
+          "addressCountry": "GB"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.5097,
+          "longitude": -0.1465
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "17:30",
+            "closes": "23:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "12:00",
+            "closes": "15:30"
+          }
+        ],
+        "acceptsReservations": "True"
+      }
+    </script>
+  </head>
+  <body class="bg-[#0B0C10] text-[#F3F4F6] selection:bg-[#C5A059]/30 selection:text-[#F3E5AB] antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
